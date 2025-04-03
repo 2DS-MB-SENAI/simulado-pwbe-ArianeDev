@@ -9,4 +9,3 @@ def get_livros(request):
     livros = Livro.objects.all()
     serializer = LivroSerializer(livros, many = True)
     return Response(serializer.data)
-
