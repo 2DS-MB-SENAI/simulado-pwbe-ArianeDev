@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt_-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listagem</title>
+    </head>
+    <body>
+        <ul>
+            {% for i in livros %}
+                <li>{{i.titulo}} {{i.autor}} {{i.paginas}}.</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
